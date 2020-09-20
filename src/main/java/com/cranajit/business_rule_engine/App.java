@@ -34,7 +34,7 @@ public class App {
     		.addRule(rule7);
     	    	
     	Map<String, String> query = new HashMap<String, String>();
-    	query.put("PAYMENT_TYPE", "CREATE_MEMBERSHIP");
+    	query.put("PAYMENT_TYPE", "VIDEO_LEARNING_TO_SKI");
 
     	
     	List<Action> res = engine.run(query);
