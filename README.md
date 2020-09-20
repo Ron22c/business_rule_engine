@@ -18,7 +18,8 @@
 # Rule
 * Rule is a Json object which contains conditions and actions.
  * Example:
-```{
+```
+{
     "conditions": {
     	"anyOf":[
 	    	{
