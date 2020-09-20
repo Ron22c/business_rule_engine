@@ -13,10 +13,8 @@ import com.fasterxml.jackson.core.JsonParseException;
 import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
-public class App 
-{
-    public static void main( String[] args ) throws JsonParseException, JsonMappingException, IOException
-    {
+public class App {
+    public static void main(String[] args ) throws JsonParseException, JsonMappingException, IOException {
     	ObjectMapper mapper = new ObjectMapper();
     	Rule rule = mapper.readValue(new File("src/main/resources/Rule1.json"), Rule.class);
     	Rule rule2 = mapper.readValue(new File("src/main/resources/Rule2.json"), Rule.class);

@@ -13,6 +13,7 @@
  * addRule(): this method will take a rule Object and return an instance of Engine class.
  
  * run(): this method will take a query which contains which payment_type is received in a Map<String, String> and return a List of Actions based on rules matched to that payment_type so that client could take appropriate actions for that payment_type
+ * in case of no rules found run() method will throw a RuntimeException("NO RULES FOUND")
 
 # Rule
 * Rule is a Json object which contains conditions and actions.
