@@ -26,6 +26,22 @@ public class CriteriaExecutor {
 					}
 				}
 			}
+			
+			if(conditions.getAllOf().size()!=0) {
+				List<Action> temp = new ArrayList<Action>();
+				Boolean allMatched = true;
+				for(Criteria c : conditions.getAllOf()) {
+					try {
+						if(c.getValue().equals(inputMap.get(c.getFact()))) {
+							res.add(rule.getAction());
+						}
+					} catch (Exception e) {
+						System.out.println(c.getFact() + " RULE DID NOT MATCHED");
+						allMatched = false;
+					}
+				}
+				if(allMatched) res.addAll(temp);
+			}
 		}
 		return res;
 	}
