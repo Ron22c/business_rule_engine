@@ -34,8 +34,7 @@ public class App
     		.addRule(rule5)
     		.addRule(rule6)
     		.addRule(rule7);
-    	
-    	
+    	    	
     	Map<String, String> query = new HashMap<String, String>();
     	query.put("PAYMENT_TYPE", "CREATE_MEMBERSHIP");
 
