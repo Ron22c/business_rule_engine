@@ -10,7 +10,7 @@
 	    ],
     	"noneOf":[]
     },
-    "result": {
+    "action": {
         "type": "GENERATE_PACKING_SLIP",
         "params": { 
         	"FREE":"ADD_FIRST_AID_VIDEO_TO_PACKING_SLIP"

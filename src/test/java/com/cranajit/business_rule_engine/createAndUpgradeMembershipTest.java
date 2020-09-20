@@ -9,6 +9,9 @@ import java.util.List;
 import java.util.Map;
 
 import org.junit.Test;
+
+import com.cranajit.business_rule_engine.model.Action;
+import com.cranajit.business_rule_engine.model.ActionType;
 import com.fasterxml.jackson.core.JsonParseException;
 import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -29,10 +32,10 @@ public class createAndUpgradeMembershipTest {
     	Map<String, String> query = new HashMap<String, String>();
     	query.put("PAYMENT_TYPE", "CREATE_MEMBERSHIP");
     	
-    	List<Result> res = engine.run(query);
+    	List<Action> res = engine.run(query);
     	assertTrue(res.size() == 2);
-    	assertTrue(res.get(0).getType().equals(ResultType.ACTIVATE_MEMBERSHIP));
-    	assertTrue(res.get(1).getType().equals(ResultType.EMAIL_OWNER));
+    	assertTrue(res.get(0).getType().equals(ActionType.ACTIVATE_MEMBERSHIP));
+    	assertTrue(res.get(1).getType().equals(ActionType.EMAIL_OWNER));
 	}
 	
 	@Test
@@ -48,9 +51,9 @@ public class createAndUpgradeMembershipTest {
     	Map<String, String> query = new HashMap<String, String>();
     	query.put("PAYMENT_TYPE", "UPGRADE_MEMBERSHIP");
     	
-    	List<Result> res = engine.run(query);
+    	List<Action> res = engine.run(query);
       	assertTrue(res.size() == 2);
-    	assertTrue(res.get(0).getType().equals(ResultType.UPGRADE_MEMBERSHIP));
-    	assertTrue(res.get(1).getType().equals(ResultType.EMAIL_OWNER));
+    	assertTrue(res.get(0).getType().equals(ActionType.UPGRADE_MEMBERSHIP));
+    	assertTrue(res.get(1).getType().equals(ActionType.EMAIL_OWNER));
 	}
 }

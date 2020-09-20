@@ -15,7 +15,7 @@
     	"allOf":[],
     	"noneOf":[]
     },
-    "result": {
+    "action": {
         "type": "EMAIL_OWNER",
         "params": { 
         }

@@ -20,7 +20,7 @@
     	"allOf":[],
     	"noneOf":[]
     },
-    "result": {
+    "action": {
         "type": "GENERATE_PACKING_SLIP",
         "params": {}
     }

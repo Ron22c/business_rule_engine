@@ -10,7 +10,7 @@
 	    ],
     	"noneOf":[]
     },
-    "result": {
+    "action": {
         "type": "GENERATE_PACKING_SLIP_ROYALTY_DEPERMENT",
         "params": { 
         }

@@ -10,7 +10,7 @@
 	    ],
     	"noneOf":[]
     },
-    "result": {
+    "action": {
         "type": "UPGRADE_MEMBERSHIP",
         "params": { 
         }

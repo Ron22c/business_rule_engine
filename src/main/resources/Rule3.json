@@ -10,7 +10,7 @@
 	    ],
     	"noneOf":[]
     },
-    "result": {
+    "action": {
         "type": "ACTIVATE_MEMBERSHIP",
         "params": { 
         }
