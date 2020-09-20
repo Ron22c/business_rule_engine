@@ -1,0 +1,18 @@
+{
+    "conditions": {
+    	"anyOf":[],
+    	"allOf":[
+    		{
+	    		"fact":"PAYMENT_TYPE",
+	    		"operator":"EQUALS",
+	    		"value":"UPGRADE_MEMBERSHIP"
+	    	}
+	    ],
+    	"noneOf":[]
+    },
+    "result": {
+        "type": "UPGRADE_MEMBERSHIP",
+        "params": { 
+        }
+    }
+}

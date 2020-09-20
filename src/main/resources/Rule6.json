@@ -1,0 +1,23 @@
+{
+    "conditions": {
+    	"anyOf":[
+	    	{
+	    		"fact":"PAYMENT_TYPE",
+	    		"operator":"EQUALS",
+	    		"value":"PHYSICAL_PRODUCT"
+	    	},
+	    	{
+	    		"fact":"PAYMENT_TYPE",
+	    		"operator":"EQUALS",
+	    		"value":"BOOK"
+	    	}
+    	],
+    	"allOf":[],
+    	"noneOf":[]
+    },
+    "result": {
+        "type": "GENERATE_AGENT_COMISSION",
+        "params": { 
+        }
+    }
+}

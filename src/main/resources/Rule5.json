@@ -1,0 +1,23 @@
+{
+    "conditions": {
+    	"anyOf":[
+	    	{
+	    		"fact":"PAYMENT_TYPE",
+		    	"operator":"EQUALS",
+		    	"value":"UPGRADE_MEMBERSHIP"
+	    	},
+	    	{
+	    		"fact":"PAYMENT_TYPE",
+	    		"operator":"EQUALS",
+	    		"value":"CREATE_MEMBERSHIP"
+	    	}
+    	],
+    	"allOf":[],
+    	"noneOf":[]
+    },
+    "result": {
+        "type": "EMAIL_OWNER",
+        "params": { 
+        }
+    }
+}

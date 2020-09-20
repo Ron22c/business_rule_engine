@@ -1,0 +1,18 @@
+{
+    "conditions": {
+    	"anyOf":[],
+    	"allOf":[
+    		{
+	    		"fact":"PAYMENT_TYPE",
+	    		"operator":"EQUALS",
+	    		"value":"BOOK"
+	    	}
+	    ],
+    	"noneOf":[]
+    },
+    "result": {
+        "type": "GENERATE_PACKING_SLIP_ROYALTY_DEPERMENT",
+        "params": { 
+        }
+    }
+}

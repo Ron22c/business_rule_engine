@@ -1,0 +1,19 @@
+{
+    "conditions": {
+    	"anyOf":[],
+    	"allOf":[
+    		{
+	    		"fact":"PAYMENT_TYPE",
+	    		"operator":"EQUALS",
+	    		"value":"VIDEO_LEARNING_TO_SKI"
+	    	}
+	    ],
+    	"noneOf":[]
+    },
+    "result": {
+        "type": "GENERATE_PACKING_SLIP",
+        "params": { 
+        	"FREE":"ADD_FIRST_AID_VIDEO_TO_PACKING_SLIP"
+        }
+    }
+}

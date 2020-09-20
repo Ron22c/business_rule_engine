@@ -1,0 +1,27 @@
+{
+    "conditions": {
+    	"anyOf":[
+	    	{
+	    		"fact":"PAYMENT_TYPE",
+	    		"operator":"EQUALS",
+	    		"value":"PHYSICAL_PRODUCT"
+	    	},
+	    	{
+	    		"fact":"PAYMENT_TYPE",
+	    		"operator":"EQUALS",
+	    		"value":"BOOK"
+	    	},
+	    	{
+	    		"fact":"PAYMENT_TYPE",
+	    		"operator":"EQUALS",
+	    		"value":"VIDEO"
+	    	}
+    	],
+    	"allOf":[],
+    	"noneOf":[]
+    },
+    "result": {
+        "type": "GENERATE_PACKING_SLIP",
+        "params": {}
+    }
+}

@@ -1,0 +1,18 @@
+{
+    "conditions": {
+    	"anyOf":[],
+    	"allOf":[
+    		{
+	    		"fact":"PAYMENT_TYPE",
+	    		"operator":"EQUALS",
+	    		"value":"CREATE_MEMBERSHIP"
+	    	}
+	    ],
+    	"noneOf":[]
+    },
+    "result": {
+        "type": "ACTIVATE_MEMBERSHIP",
+        "params": { 
+        }
+    }
+}
