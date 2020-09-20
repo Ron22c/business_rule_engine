@@ -33,6 +33,5 @@ private Engine engine;
         } catch (RuntimeException e) {
             assertTrue(e.getLocalizedMessage().equals("NO RULE MATCHED"));
         }
-
 	}
 }
